@@ -25,3 +25,5 @@ Feature: Scrap behat references from Wikipedia
     When I follow "Technology"
     Then the url should match "wiki/Portal:Technology"
     And I should see "Refresh selections"
+    When I follow "Computer Science"
+    Then the url should match "wiki/Wikipedia:WikiProject_Computer_Science"
