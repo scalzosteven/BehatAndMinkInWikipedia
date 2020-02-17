@@ -27,3 +27,8 @@ Feature: Scrap behat references from Wikipedia
     And I should see "Refresh selections"
     When I follow "Computer Science"
     Then the url should match "wiki/Wikipedia:WikiProject_Computer_Science"
+    When I fill in "Search Wikipedia" with "Lion"
+    And I press "Search Wikipedia"
+    And print current URL
+    And I follow "Lion"
+    Then I should see "The lion's closest relatives are the other species of the genus Panthera, namely tiger, snow leopard, jaguar, and leopard"
