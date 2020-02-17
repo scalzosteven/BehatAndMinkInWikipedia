@@ -1,0 +1,11 @@
+default: # PROFILE
+  suites:
+    default: # DEFAULT SUITE
+      contexts:
+        - FeatureContext
+        - Behat\MinkExtension\Context\MinkContext
+
+  extensions:
+    Behat\MinkExtension:
+      base_url: http://www.wikipedia.org
+      goutte: ~
